@@ -26,8 +26,6 @@
 <INLINE>
 <![CDATA[
 <?
-  $version = parse_ini_file("/etc/unraid-version");
-  
   echo "Cleaning Up Old Versions\n";
   if ( is_file("/usr/local/emhttp/plugins/community.applications/scripts/removeCron.php") ) {
     exec("/usr/local/emhttp/plugins/community.applications/scripts/removeCron.php");
